@@ -1,0 +1,33 @@
+.collapse-container {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin: 10px 80px;
+  overflow: hidden;
+
+  .collapse-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ff5a5f;
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+
+    h3 {
+      margin: 0;
+    }
+
+    button {
+      background: none;
+      border: none;
+      color: white;
+      font-size: 20px;
+      cursor: pointer;
+    }
+  }
+
+  .collapse-content {
+    padding: 10px;
+    background-color: #f9f9f9;
+  }
+}
