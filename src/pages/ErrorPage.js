@@ -1,14 +1,28 @@
-import React from 'react';
-import './ErrorPage.scss';
+import { Link } from "react-router-dom";
+import Header from "../../components/Header/Header";
+import "./ErrorPage.css";
 
-function ErrorPage() {
+const ErrorPage = () => {
   return (
-    <div className="error-page">
-      <h1>404</h1>
-      <p>Oups! La page que vous demandez n'existe pas.</p>
-      <Link to="/">Retourner à la page d'accueil</Link>
-    </div>
+    <>
+      <Header />
+      <main className="main">
+        <div className="error-container">
+          <h1 className="error-title">404</h1>
+          <p className="error-msg">Oups! La page que vous demandez n'existe pas.</p>
+        </div>
+        <div className="back-link">
+          <Link 
+            to="/" 
+            aria-label="Retourner sur la page d'accueil" 
+            style={{ color: "#ff6060", textDecoration: "none" }}
+          >
+            Retourner sur la page d'accueil
+          </Link>
+        </div>
+      </main>
+    </>
   );
-}
+};
 
 export default ErrorPage;
