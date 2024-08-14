@@ -1,6 +1,6 @@
 import React from 'react';
 import { useParams, Navigate } from 'react-router-dom';
-import data from '../data/logements.json';
+import data from '../datas/logements.json';
 import Gallery from '../components/Gallery';
 import Collapse from '../components/Collapse';
 import './Property.scss';

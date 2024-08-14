@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
-import Header from "../../components/Header/Header";
-import "./ErrorPage.css";
+import Header from '../components/Layout/Header';
+import "./ErrorPage.scss";
 
 const ErrorPage = () => {
   return (
