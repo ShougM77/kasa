@@ -5,7 +5,7 @@ import Property from './pages/Property';
 import ErrorPage from './pages/ErrorPage';
 import Header from './components/Layout/Header';
 import Footer from './components/Layout/Footer';
-import About from './pages/About';
+import About from './pages/Apropos';
 
 function App() {
   return (
