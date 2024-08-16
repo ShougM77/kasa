@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import Header from '../components/Layout/Header';
 import "./ErrorPage.scss";
+import Footer from "../components/Layout/Footer";
 
 const ErrorPage = () => {
   return (
@@ -21,6 +22,7 @@ const ErrorPage = () => {
           </Link>
         </div>
       </main>
+      <Footer />
     </>
   );
 };

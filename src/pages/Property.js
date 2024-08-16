@@ -3,6 +3,8 @@ import { useParams, Navigate } from 'react-router-dom';
 import data from '../datas/logements.json';
 import Gallery from '../components/Gallery';
 import Collapse from '../components/Collapse';
+import Footer from "../components/Layout/Footer";
+import Header from '../components/Layout/Header';
 import './Property.scss';
 
 function Property() {
@@ -12,6 +14,8 @@ function Property() {
   if (!property) return <Navigate to="/404" />;
 
   return (
+    <>
+    <Header />
     <main>
       <Gallery images={property.pictures} />
       <div>
@@ -20,6 +24,8 @@ function Property() {
         <Collapse title="Équipements" content={property.equipments.join(', ')} />
       </div>
     </main>
+    <Footer />
+    </>
   );
 }
 

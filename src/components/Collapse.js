@@ -6,10 +6,10 @@ function Collapse({ title, content }) {
 
   return (
     <div className="collapse">
-      <button onClick={() => setIsOpen(!isOpen)}>
+      <button className="collapse-button" onClick={() => setIsOpen(!isOpen)}>
         {title}
       </button>
-      {isOpen && <div className="content">{content}</div>}
+      {isOpen && <div className="collapse-content">{content}</div>}
     </div>
   );
 }
