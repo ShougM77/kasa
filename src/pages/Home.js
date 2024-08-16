@@ -9,16 +9,16 @@ import bannerImg from "../images/mer.png";
 function Home() {
   return (
     <>
-    <Header />
-    <main>
-    <Banner imageSrc={bannerImg} text="Chez vous, partout et ailleurs" />
-      <section>
-        {data.map((property) => (
-          <Card key={property.id} property={property} />
-        ))}
-      </section>
-    </main>
-    <Footer />
+      <Header />
+      <main>
+        <Banner imageSrc={bannerImg} title="Chez vous, partout et ailleurs" />
+        <section>
+          {data.map((property) => (
+            <Card key={property.id} property={property} />
+          ))}
+        </section>
+      </main>
+      <Footer />
     </>
   );
 }

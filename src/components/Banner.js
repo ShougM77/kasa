@@ -1,9 +1,9 @@
 import React from 'react';
 import './Banner.scss';
 
-function Banner({ title, image }) {
+function Banner({ imageSrc, title }) {
   return (
-    <div className="banner" style={{ backgroundImage: `url(${image})` }}>
+    <div className="banner" style={{ backgroundImage: `url(${imageSrc})` }}>
       <h1 className="banner-title">{title}</h1>
     </div>
   );
