@@ -12,7 +12,7 @@ function Home() {
       <Header />
       <main>
         <Banner imageSrc={bannerImg} title="Chez vous, partout et ailleurs" />
-        <section>
+        <section class="cards-container">
           {data.map((property) => (
             <Card key={property.id} property={property} />
           ))}
