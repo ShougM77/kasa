@@ -50,6 +50,7 @@
     color: #ff6060;
     font-weight: 500;
   }
+
   
 
   .property-rating {
@@ -95,5 +96,27 @@
     .property-title {
       font-size: 18px;
     }
+
+    .property-location {
+      font-size: 14px;
+    }
+    .property-etoile {
+      width: 18px;
+      height: 18px;
+    }
+    .property-collapse {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        margin: auto;
+        margin-bottom: 30px;
+    }
+    .property-hote-info {
+        display: inline-flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        margin-top: 25px;
+    }
+ 
   }
   
