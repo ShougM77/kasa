@@ -5,6 +5,7 @@ import Banner from "../components/Banner";
 import Footer from "../components/Layout/Footer";
 import Header from "../components/Layout/Header";
 import bannerImg from "../images/mer.png";
+import "./Home.scss";
 
 function Home() {
   return (

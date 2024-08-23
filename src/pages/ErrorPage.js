@@ -15,9 +15,7 @@ const ErrorPage = () => {
         <div className="back-link">
           <Link 
             to="/" 
-            aria-label="Retourner sur la page d'accueil" 
-            style={{ color: "#ff6060", textDecoration: "none" }}
-          >
+            aria-label="Retourner sur la page d'accueil">
             Retourner sur la page d'accueil
           </Link>
         </div>

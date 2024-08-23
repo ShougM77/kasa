@@ -1,7 +1,7 @@
 import { useState } from "react";
 import arrowNext from "../images/arrow-next.png";
 import arrowPrev from "../images/arrow-prev.png";
-import "./Slideshow.css";
+import "./Slideshow.scss";
 
 const Slideshow = ({ images }) => {
   const [current, setCurrent] = useState(0);
