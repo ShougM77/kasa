@@ -4,6 +4,7 @@ import Header from '../components/Layout/Header';
 import Banner from '../components/Banner';
 import './Apropos.scss';
 import montagne from '../images/montagne.png';
+import Footer from "../components/Layout/Footer";
 
 function Apropos() {
   return (
@@ -26,6 +27,7 @@ function Apropos() {
           </Collapse>
         </section>
       </div>
+      <Footer />
     </>
   );
 }

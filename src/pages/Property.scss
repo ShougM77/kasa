@@ -1,0 +1,135 @@
+.property-main {
+    margin: 0 100px;
+  }
+  
+
+  .property-header {
+    display: flex;
+    justify-content: space-between;
+    margin: 25px 0;
+  }
+  
+
+  .property-info {
+    flex: 1;
+  }
+  
+  .property-title {
+    color: #ff6060;
+    font-size: 51px;
+    margin: 0;
+  }
+  
+  .property-location {
+    color: black;
+    margin-top: 5px;
+    font-weight: 500;
+  }
+  
+
+  .property-tags {
+    margin-top: 10px;
+    display: flex;
+    gap: 10px;
+  }
+  
+  .property-hote-name-info {
+    display: flex;
+    justify-content:end;
+    gap: 10px;
+    align-items: center;
+  }
+
+  .property-host-picture {
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+  }
+  .name {
+    color: #ff6060;
+    font-weight: 500;
+  }
+
+  
+
+  .property-rating {
+    display: flex;
+    gap: 5px;
+  }
+  
+  .property-etoile {
+    width: 36px;
+    height: 36px;
+  }
+  
+
+  .property-collapse {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 40px;
+    margin-top: 30px;
+    gap: 6%;
+  }
+  .collapse {
+    width: 100%;
+  }
+  
+
+  .property-equipments-content {
+    list-style: none;
+    padding: 0;
+  }
+  
+
+  @media screen and (max-width: 768px) {
+    .property-main {
+      margin: 0 20px;
+    }
+  
+    .property-header {
+      flex-direction: column;
+    }
+  
+    .property-title {
+      font-size: 18px;
+    }
+
+    .property-location {
+      font-size: 14px;
+    }
+    .property-etoile {
+      width: 18px;
+      height: 18px;
+    }
+    .property-collapse {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        margin: auto;
+        margin-bottom: 30px;
+    }
+    .property-hote-info {
+        display: inline-flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        margin-top: 25px;
+        align-items: center;
+    }
+    .name {
+        font-size: 12px;
+    }
+    .property-host-picture {
+        width: 32px;
+        height: 32px;
+    }
+    .tag {
+        margin:unset;
+        min-width:unset;
+        font-size: 10px;
+    }
+    
+ 
+  }
+  
