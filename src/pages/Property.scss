@@ -56,7 +56,6 @@
   .property-rating {
     display: flex;
     gap: 5px;
-    margin-top: 20px;
   }
   
   .property-etoile {
@@ -116,7 +115,21 @@
         flex-direction: row-reverse;
         justify-content: space-between;
         margin-top: 25px;
+        align-items: center;
     }
+    .name {
+        font-size: 12px;
+    }
+    .property-host-picture {
+        width: 32px;
+        height: 32px;
+    }
+    .tag {
+        margin:unset;
+        min-width:unset;
+        font-size: 10px;
+    }
+    
  
   }
   
