@@ -12,8 +12,9 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/property/:id" element={<Property />} />
-        <Route path="/apropos" element={<Apropos />} />
         <Route path="*" element={<ErrorPage />} />
+        <Route path="/apropos" element={<Apropos />} />
+       
       </Routes>
     </>
   );

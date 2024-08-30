@@ -1,19 +1,22 @@
 import React, { useState } from 'react';
 import './Collapse.scss';
-import arrowClosed from "../images/icon-fermer.png";
-import arrowOpen from "../images/icon-ouvert.png";
+import icon from "../images/icon-fermer.png";
 
 function Collapse({ title, children }) {
   const [isOpen, setIsOpen] = useState(false);
 
+  const toggleCollapse = () => {
+    setIsOpen(!isOpen);
+  };
+
   return (
     <div className="collapse">
-      <button className="collapse-button" onClick={() => setIsOpen(!isOpen)}>
+      <button className="collapse-button" onClick={toggleCollapse}>
         {title}
         <img
-          src={isOpen ? arrowOpen : arrowClosed}
-          alt="Toggle Icon"
-          className="collapse-icon"
+          src={icon}
+          className={`collapse-icon ${isOpen ? "rotated" : ""}`}
+          alt="collapse icon"
         />
       </button>
       {isOpen && <div className="collapse-content">{children}</div>}
